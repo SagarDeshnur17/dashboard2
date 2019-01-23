@@ -1,0 +1,16 @@
+.example-card {
+    max-width: 100px;
+  }
+  
+  .example-header-image {
+    background-image: url('http://conversationsabouther.net/wp-content/uploads/2015/07/eminem.jpg');
+    background-size: cover;
+  }
+  
+  .example-container {
+    display: flex;
+    flex-direction: column;
+    color: black;
+  }
+ 
+  

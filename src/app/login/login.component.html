@@ -1,0 +1,21 @@
+<ngx-spinner bdColor = "rgba(30,216,216,0.11)"
+size = "large"
+color = "#3d33ca"
+type = "ball-clip-rotate">
+</ngx-spinner>
+
+<div class="example-container">
+  <mat-form-field>
+    <input matInput placeholder="username" [(ngModel)]="loginReq.id">
+  </mat-form-field>
+
+ 
+<div class="example-container">
+      <mat-form-field>
+        <input matInput placeholder="password" [type]="hide ? 'password' : 'text'" [(ngModel)]="loginReq.pwd">
+        <mat-icon matSuffix (click)="hide = !hide">{{hide ? 'visibility_off' : 'visibility'}}</mat-icon>
+      </mat-form-field>
+      </div>
+    
+  <button mat-raised-button color="primary" (click)="login()">Submit</button>
+</div>  
