@@ -34,9 +34,11 @@ export class LoginComponent implements OnInit {
     this.loginurl= 'http://192.168.0.114:10010/login';
     this.http.post(this.loginurl,this.loginReq)
     
-    /* .timeout(2500) */
-      .subscribe(res =>{
-      this.loginRes=res;
+     /* .timeout(2500) */
+     
+     .subscribe(res =>{
+       this.spinner.hide(); 
+        this.loginRes=res;
       console.log("response-"+ JSON.stringify(res));
       if (this.loginRes.status == 'success')
       {
