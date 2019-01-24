@@ -31,7 +31,7 @@ export class LoginComponent implements OnInit {
   }
   login(){
     this.spinner.show();
-    this.loginurl= 'http://192.168.0.114:10010/login';
+    this.loginurl= 'http://192.168.0.173:10010/login';
     this.http.post(this.loginurl,this.loginReq)
     
      /* .timeout(2500) */

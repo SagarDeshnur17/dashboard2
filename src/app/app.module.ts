@@ -21,6 +21,7 @@ import {HttpClientModule} from '@angular/common/http';
 import { NgxSpinnerModule } from 'ngx-spinner';
 import { DashComponent } from './dash/dash.component';
 import { ChartsModule } from 'ng2-charts';
+import { AngularFontAwesomeModule } from 'angular-font-awesome';
 
 
 @NgModule({
@@ -50,7 +51,8 @@ import { ChartsModule } from 'ng2-charts';
     HttpClientModule,
     MatIconModule,
     NgxSpinnerModule,
-    ChartsModule
+    ChartsModule,
+    AngularFontAwesomeModule
 
   ],
 
